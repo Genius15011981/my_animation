@@ -18,6 +18,11 @@ class MainActivity : AppCompatActivity() {
         binding.alphaBtn.setOnClickListener(){
             val animation=AnimationUtils.loadAnimation(this, R.anim.alpha_anim)
             binding.imageView.startAnimation(animation)
+
+         binding.rotateBtn.setOnClickListener(){
+             val animation=AnimationUtils.loadAnimation(this, R.anim.rotate_anim)
+             binding.imageView.startAnimation(animation)
+         }
         }
 
 

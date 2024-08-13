@@ -24,6 +24,7 @@ android {
                 getDefaultProguardFile("proguard-android-optimize.txt"),
                 "proguard-rules.pro"
             )
+            isDebuggable = false
         }
     }
     compileOptions {
@@ -37,6 +38,7 @@ android {
         viewBinding=true
 
     }
+    buildToolsVersion = "30.0.3"
 }
 
 dependencies {
