@@ -24,7 +24,20 @@ class MainActivity : AppCompatActivity() {
              binding.imageView.startAnimation(animation)
          }
         }
+        binding.scaleBtn.setOnClickListener(){
+            val animation=AnimationUtils.loadAnimation(this, R.anim.scale_anim)
+            binding.imageView.startAnimation(animation)
+        }
 
+        binding.rotateBtn.setOnClickListener(){
+            val animation=AnimationUtils.loadAnimation(this, R.anim.rotate_anim)
+            binding.imageView.startAnimation(animation)
+        }
+
+        binding.translBtn.setOnClickListener(){
+            val animation=AnimationUtils.loadAnimation(this, R.anim.translate_anim)
+            binding.imageView.startAnimation(animation)
+        }
 
     }
 }
